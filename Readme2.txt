@@ -1,0 +1,6 @@
+1) CP.mat: This file include the positions of each drug in the Final.mat.
+2) Final.mat: This file includes drug fingerprint - isolate input versus fold change output values of all drugs.
+3) Main_Simulation.m: This is main code for contruction of the ANN models by using 7-in 1-out procedure. COL_BESTNET{i,j} is the main output of this program...
+that corresponds to the j th best ANN model by excluding i th drug from all data. Thus, COL_BESTNET{i,j} is j th model (we have 100 model for ensembling process)...
+ trained with data of seven drugs except that drug i.
+4) SUMMARY.mat: This is the all output of the program Main_Simulation.m.
